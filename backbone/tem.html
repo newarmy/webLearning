@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<div id="box">
+			<h1 id="h" style="border:1px solid #f00;background:#ccc;width:100px;word-break: break-all; font-size:12px;">fetch a collection of data</h1>
+			<h1 id="ad" style="border:1px solid #f00;background:#ccc;width:100px;font-size:12px;">add a model</h1>
+			<div id="dd"></div>
+		</div>
+	</body>
+	<script src="jquery1.8.3.js"></script>
+	<script src="underscore.js"></script>
+	<script src="backbone.js"></script>
+	<script>
+	var cc = false;
+	var dd = "<%if(flag) {%><%=aaa%><%} else {%> <%=ccc%><%}%> : hello";
+		var str = _.template(dd,{ddd:'dtest',ccc:'C-test-', aaa: 'A-test-',flag :'dd'});
+		alert("result = " +str);
+		
+		/*var reg = /h(a)|(b)|\s(c)|$/g
+		var str2 = "hao shuo shen me chen yun bb";
+		str2.replace(reg, function () {
+			var len = arguments.length;
+			for(var i = 0; i < len; i++){
+				console.log(i+" = "+arguments[i]);
+			}
+			console.log("----------------------------------");
+		});*/
+	var str = '${ddd} is a ${ccc}';
+	function templete(str, obj){
+		return str.replace(/\$\{([^\}]+)\}/gi, function (a, b) {
+		    alert("a = "+a)
+			alert("b = "+b);
+			return obj[b];
+		});
+	};
+	alert(templete(str, {ddd: 'liu bang', ccc: 'huang di'}));
+	
+		
+	</script>
+</html>

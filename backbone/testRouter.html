@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>backbone router 测试实例</title>
+	</head>
+	<body>
+		<div id="box">
+			<h1 id="h" style="border:1px solid #f00;background:#ccc;width:100px;word-break: break-all; font-size:14px;">change hash</h1>
+			<h1 id="ad" style="border:1px solid #f00;background:#ccc;width:100px;font-size:14px;">change another hash</h1>
+			<div id="dd"></div>
+		</div>
+		<a href="#dd/da/dc/open">test route method</a>
+	</body>
+	<script src="jquery.js"></script>
+	<script src="underscore.js"></script>
+	<script src="backbone.js"></script>
+	<script>
+	    function test1(){};
+		(function(){
+			var R = Backbone.Router.extend({
+				routes: {
+				  'actions' : 'action',
+				  'action/:id': 'actionTo',
+				  'action/:n/:p': 'twoFunc'
+				},
+				action: function () {
+					$.ajax({
+						url: 'http://www.test.com/backbone/data.json',
+						dataType: 'jsonp',
+						jsonpCallback: 'test1',
+						success: function (res) {
+							cObj.add(res.dd);
+							//appv.cObj.trigger('addAll',appv.cObj, appv.$el);
+						}
+					});
+				},
+				initialize: function () {
+				    this.route(/^(.*?)\/open$/,  'p', function (what) {
+					    alert('what = '+what);
+					});
+					this.on('route:p', function(params/*正则匹配的字符串*/) {
+					    alert(params);
+						alert('route event');
+					});
+					//"route" (route 为name, params为正则匹配的字符串)
+					this.on('route', function(route, p) {
+						console.log(route);
+						alert("p = "+p);
+					});
+				},
+				actionTo: function (id) {
+					alert(id);
+				},
+			    twoFunc: function(n, p) {
+					alert('n = '+n);
+					alert('p = '+p);
+				}
+				
+			});
+			var C =  Backbone.Collection.extend({
+				initialize: function (models, options) {
+					//this.on('addAll', options.view.show);
+				}
+			});
+			var cObj = new C();
+			var V = Backbone.View.extend({
+				el: $('#box'),//为了events的事件能执行，el必须是一个在文档中的容器dom
+				initialize: function () {
+					//this.cObj = new C([], {view: this});
+					this.listenTo(cObj, 'add', this.addOne);
+				},
+				events: {
+					'click #h': 'ask',
+					'click #ad': 'addItem'
+				},
+				ask : function(){
+					location.hash = '#actions';
+				},
+				addItem: function () {
+					location.hash = '#action/nihao/womenhao';
+				},
+				addOne: function (model) {
+					var str = "<p style='padding-bottom:10px;'>"+model.get('name')+"</p>";
+					this.$el.find('#dd').append(str);
+				},
+				show: function(collection, dom) {
+					var str = "";
+					console.log('index');
+					collection.each( function (obj) {
+						str+="<p style='padding-bottom:10px;'>"+obj.get('name')+"</p>"
+					});
+					dom.find('#dd').html(str); 
+				}
+			});
+			var appv = new V();
+			var appr = new R();
+			Backbone.history.start();
+		}());
+	</script>
+</html>

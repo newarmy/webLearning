@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>backbone 怎么用</title>
+	</head>
+	<body>
+		<div id="box">
+			<ul id="list"></ul>
+		</div>
+	</body>
+	<script src="jquery.js"></script>
+	<script src="underscore.js"></script>
+	<script src="backbone.js"></script>
+	<script>
+	    // 创建model
+	    var M = Backbone.Model.extend({
+			defaults: {
+				name: 'first name'
+			}
+		}); 
+		// 创建Collection
+		var Collection = Backbone.Collection.extend({
+			model: M,
+			url:"http://www.test.com/backbone/d.json",
+			//调用fetch是，自动调用
+			parse: function (d) {
+				return d;
+			}
+		});
+		var CObj = new Collection();
+		//可以这样动态的写url
+		/*CObj.url = function () {
+			return 'url address';
+		}*/
+		//创建与model对应得View
+		var liView = Backbone.View.extend({
+			tagName: 'li',
+			initialize: function () {
+			    //model变化是，触发change事件
+				this.listenTo(this.model, 'change', this.render);
+			},
+			render: function () {
+			    console.log(this.model);
+				this.$el.html(this.model.attributes.name);
+				return this;
+			}
+			
+		});
+		//创建与Collection对应得View
+		var listView = Backbone.View.extend({
+			el: '#list',
+			//template: _.template('<li><%=name%></li>'),
+			render: function() {
+			
+			},
+			initialize: function() {
+			    //联系Colloection，fetch后会触发add事件
+				//回调函数的参数为： model, collection, options
+				//this.listenTo(CObj, 'add', this.addone);
+				//回调函数的参数为： collection，  option
+				this.listenTo(CObj, 'reset', this.addAll);
+				//获取数据，参数可以加$.ajax的参数，
+				CObj.fetch({dataType:'json', reset: true});
+			},
+			addone:function (modelObj) {
+			   //这是View对象
+			   var liV = new liView({
+				  model: modelObj
+			   });
+			   this.$el.append(liV.render().el);
+			},
+			addAll: function (collection) {
+			    var k = this;
+				//c
+				_.each(collection.models, function (model) {
+					 var liV = new liView({
+						  model: model
+					   });
+					    k.$el.append(liV.render().el);
+				});
+			}
+		});
+		new listView();
+		
+	</script>
+</html>

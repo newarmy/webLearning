@@ -1,0 +1,1246 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'css-loader',
+1 verbose cli   'style-loader',
+1 verbose cli   '--save-dev' ]
+2 info using npm@3.10.3
+3 info using node@v6.5.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData css-loader
+8 silly fetchPackageMetaData style-loader
+9 silly fetchNamedPackageData css-loader
+10 silly mapToRegistry name css-loader
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'css-loader',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'css-loader',
+13 silly mapToRegistry   name: 'css-loader',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/css-loader
+15 silly fetchNamedPackageData style-loader
+16 silly mapToRegistry name style-loader
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry data Result {
+19 silly mapToRegistry   raw: 'style-loader',
+19 silly mapToRegistry   scope: null,
+19 silly mapToRegistry   escapedName: 'style-loader',
+19 silly mapToRegistry   name: 'style-loader',
+19 silly mapToRegistry   rawSpec: '',
+19 silly mapToRegistry   spec: 'latest',
+19 silly mapToRegistry   type: 'tag' }
+20 silly mapToRegistry uri https://registry.npmjs.org/style-loader
+21 verbose request uri https://registry.npmjs.org/style-loader
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 22:18:07
+24 verbose request id 452029149a8c183b
+25 verbose etag W/"583dee6f-822a"
+26 verbose lastModified Tue, 29 Nov 2016 21:09:03 GMT
+27 http request GET https://registry.npmjs.org/style-loader
+28 verbose request uri https://registry.npmjs.org/css-loader
+29 verbose request no auth needed
+30 info attempt registry request try #1 at 22:18:07
+31 verbose etag W/"58417f93-16089"
+32 verbose lastModified Fri, 02 Dec 2016 14:05:07 GMT
+33 http request GET https://registry.npmjs.org/css-loader
+34 http 304 https://registry.npmjs.org/css-loader
+35 verbose headers { date: 'Sat, 03 Dec 2016 14:16:20 GMT',
+35 verbose headers   via: '1.1 varnish',
+35 verbose headers   'cache-control': 'max-age=300',
+35 verbose headers   etag: 'W/"58417f93-16089"',
+35 verbose headers   age: '67',
+35 verbose headers   connection: 'keep-alive',
+35 verbose headers   'x-served-by': 'cache-lcy1144-LCY',
+35 verbose headers   'x-cache': 'HIT',
+35 verbose headers   'x-cache-hits': '1',
+35 verbose headers   'x-timer': 'S1480774580.959072,VS0,VE0',
+35 verbose headers   vary: 'Accept-Encoding' }
+36 silly get cb [ 304,
+36 silly get   { date: 'Sat, 03 Dec 2016 14:16:20 GMT',
+36 silly get     via: '1.1 varnish',
+36 silly get     'cache-control': 'max-age=300',
+36 silly get     etag: 'W/"58417f93-16089"',
+36 silly get     age: '67',
+36 silly get     connection: 'keep-alive',
+36 silly get     'x-served-by': 'cache-lcy1144-LCY',
+36 silly get     'x-cache': 'HIT',
+36 silly get     'x-cache-hits': '1',
+36 silly get     'x-timer': 'S1480774580.959072,VS0,VE0',
+36 silly get     vary: 'Accept-Encoding' } ]
+37 verbose etag https://registry.npmjs.org/css-loader from cache
+38 verbose get saving css-loader to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\css-loader\.cache.json
+39 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+40 http 304 https://registry.npmjs.org/style-loader
+41 verbose headers { date: 'Sat, 03 Dec 2016 14:16:22 GMT',
+41 verbose headers   via: '1.1 varnish',
+41 verbose headers   'cache-control': 'max-age=300',
+41 verbose headers   etag: 'W/"583dee6f-822a"',
+41 verbose headers   age: '43',
+41 verbose headers   connection: 'keep-alive',
+41 verbose headers   'x-served-by': 'cache-ams4449-AMS',
+41 verbose headers   'x-cache': 'HIT',
+41 verbose headers   'x-cache-hits': '1',
+41 verbose headers   'x-timer': 'S1480774582.424771,VS0,VE0',
+41 verbose headers   vary: 'Accept-Encoding' }
+42 silly get cb [ 304,
+42 silly get   { date: 'Sat, 03 Dec 2016 14:16:22 GMT',
+42 silly get     via: '1.1 varnish',
+42 silly get     'cache-control': 'max-age=300',
+42 silly get     etag: 'W/"583dee6f-822a"',
+42 silly get     age: '43',
+42 silly get     connection: 'keep-alive',
+42 silly get     'x-served-by': 'cache-ams4449-AMS',
+42 silly get     'x-cache': 'HIT',
+42 silly get     'x-cache-hits': '1',
+42 silly get     'x-timer': 'S1480774582.424771,VS0,VE0',
+42 silly get     vary: 'Accept-Encoding' } ]
+43 verbose etag https://registry.npmjs.org/style-loader from cache
+44 verbose get saving style-loader to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\style-loader\.cache.json
+45 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+46 silly install normalizeTree
+47 silly loadCurrentTree Finishing
+48 silly loadIdealTree Starting
+49 silly install loadIdealTree
+50 silly cloneCurrentTree Starting
+51 silly install cloneCurrentTreeToIdealTree
+52 silly cloneCurrentTree Finishing
+53 silly loadShrinkwrap Starting
+54 silly install loadShrinkwrap
+55 silly loadShrinkwrap Finishing
+56 silly loadAllDepsIntoIdealTree Starting
+57 silly install loadAllDepsIntoIdealTree
+58 silly resolveWithNewModule css-loader@0.26.1 checking installable status
+59 silly cache add args [ 'css-loader', null ]
+60 verbose cache add spec css-loader
+61 silly resolveWithNewModule style-loader@0.13.1 checking installable status
+62 silly cache add args [ 'style-loader', null ]
+63 verbose cache add spec style-loader
+64 silly cache add parsed spec Result {
+64 silly cache add   raw: 'css-loader',
+64 silly cache add   scope: null,
+64 silly cache add   escapedName: 'css-loader',
+64 silly cache add   name: 'css-loader',
+64 silly cache add   rawSpec: '',
+64 silly cache add   spec: 'latest',
+64 silly cache add   type: 'tag' }
+65 silly addNamed css-loader@latest
+66 verbose addNamed "latest" is being treated as a dist-tag for css-loader
+67 info addNameTag [ 'css-loader', 'latest' ]
+68 silly mapToRegistry name css-loader
+69 silly mapToRegistry using default registry
+70 silly mapToRegistry registry https://registry.npmjs.org/
+71 silly mapToRegistry data Result {
+71 silly mapToRegistry   raw: 'css-loader',
+71 silly mapToRegistry   scope: null,
+71 silly mapToRegistry   escapedName: 'css-loader',
+71 silly mapToRegistry   name: 'css-loader',
+71 silly mapToRegistry   rawSpec: '',
+71 silly mapToRegistry   spec: 'latest',
+71 silly mapToRegistry   type: 'tag' }
+72 silly mapToRegistry uri https://registry.npmjs.org/css-loader
+73 verbose addNameTag registry:https://registry.npmjs.org/css-loader not in flight; fetching
+74 silly cache add parsed spec Result {
+74 silly cache add   raw: 'style-loader',
+74 silly cache add   scope: null,
+74 silly cache add   escapedName: 'style-loader',
+74 silly cache add   name: 'style-loader',
+74 silly cache add   rawSpec: '',
+74 silly cache add   spec: 'latest',
+74 silly cache add   type: 'tag' }
+75 silly addNamed style-loader@latest
+76 verbose addNamed "latest" is being treated as a dist-tag for style-loader
+77 info addNameTag [ 'style-loader', 'latest' ]
+78 silly mapToRegistry name style-loader
+79 silly mapToRegistry using default registry
+80 silly mapToRegistry registry https://registry.npmjs.org/
+81 silly mapToRegistry data Result {
+81 silly mapToRegistry   raw: 'style-loader',
+81 silly mapToRegistry   scope: null,
+81 silly mapToRegistry   escapedName: 'style-loader',
+81 silly mapToRegistry   name: 'style-loader',
+81 silly mapToRegistry   rawSpec: '',
+81 silly mapToRegistry   spec: 'latest',
+81 silly mapToRegistry   type: 'tag' }
+82 silly mapToRegistry uri https://registry.npmjs.org/style-loader
+83 verbose addNameTag registry:https://registry.npmjs.org/style-loader not in flight; fetching
+84 verbose get https://registry.npmjs.org/css-loader not expired, no request
+85 silly addNameTag next cb for css-loader with tag latest
+86 silly addNamed css-loader@0.26.1
+87 verbose addNamed "0.26.1" is a plain semver version for css-loader
+88 verbose get https://registry.npmjs.org/style-loader not expired, no request
+89 silly addNameTag next cb for style-loader with tag latest
+90 silly addNamed style-loader@0.13.1
+91 verbose addNamed "0.13.1" is a plain semver version for style-loader
+92 silly cache afterAdd css-loader@0.26.1
+93 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\css-loader\0.26.1\package\package.json not in flight; writing
+94 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+95 silly cache afterAdd style-loader@0.13.1
+96 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\style-loader\0.13.1\package\package.json not in flight; writing
+97 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+98 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\css-loader\0.26.1\package\package.json written
+99 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\style-loader\0.13.1\package\package.json written
+100 silly fetchNamedPackageData babel-code-frame
+101 silly mapToRegistry name babel-code-frame
+102 silly mapToRegistry using default registry
+103 silly mapToRegistry registry https://registry.npmjs.org/
+104 silly mapToRegistry data Result {
+104 silly mapToRegistry   raw: 'babel-code-frame',
+104 silly mapToRegistry   scope: null,
+104 silly mapToRegistry   escapedName: 'babel-code-frame',
+104 silly mapToRegistry   name: 'babel-code-frame',
+104 silly mapToRegistry   rawSpec: '',
+104 silly mapToRegistry   spec: 'latest',
+104 silly mapToRegistry   type: 'tag' }
+105 silly mapToRegistry uri https://registry.npmjs.org/babel-code-frame
+106 silly fetchNamedPackageData css-selector-tokenizer
+107 silly mapToRegistry name css-selector-tokenizer
+108 silly mapToRegistry using default registry
+109 silly mapToRegistry registry https://registry.npmjs.org/
+110 silly mapToRegistry data Result {
+110 silly mapToRegistry   raw: 'css-selector-tokenizer',
+110 silly mapToRegistry   scope: null,
+110 silly mapToRegistry   escapedName: 'css-selector-tokenizer',
+110 silly mapToRegistry   name: 'css-selector-tokenizer',
+110 silly mapToRegistry   rawSpec: '',
+110 silly mapToRegistry   spec: 'latest',
+110 silly mapToRegistry   type: 'tag' }
+111 silly mapToRegistry uri https://registry.npmjs.org/css-selector-tokenizer
+112 silly fetchNamedPackageData cssnano
+113 silly mapToRegistry name cssnano
+114 silly mapToRegistry using default registry
+115 silly mapToRegistry registry https://registry.npmjs.org/
+116 silly mapToRegistry data Result {
+116 silly mapToRegistry   raw: 'cssnano',
+116 silly mapToRegistry   scope: null,
+116 silly mapToRegistry   escapedName: 'cssnano',
+116 silly mapToRegistry   name: 'cssnano',
+116 silly mapToRegistry   rawSpec: '',
+116 silly mapToRegistry   spec: 'latest',
+116 silly mapToRegistry   type: 'tag' }
+117 silly mapToRegistry uri https://registry.npmjs.org/cssnano
+118 silly fetchNamedPackageData lodash.camelcase
+119 silly mapToRegistry name lodash.camelcase
+120 silly mapToRegistry using default registry
+121 silly mapToRegistry registry https://registry.npmjs.org/
+122 silly mapToRegistry data Result {
+122 silly mapToRegistry   raw: 'lodash.camelcase',
+122 silly mapToRegistry   scope: null,
+122 silly mapToRegistry   escapedName: 'lodash.camelcase',
+122 silly mapToRegistry   name: 'lodash.camelcase',
+122 silly mapToRegistry   rawSpec: '',
+122 silly mapToRegistry   spec: 'latest',
+122 silly mapToRegistry   type: 'tag' }
+123 silly mapToRegistry uri https://registry.npmjs.org/lodash.camelcase
+124 silly fetchNamedPackageData postcss
+125 silly mapToRegistry name postcss
+126 silly mapToRegistry using default registry
+127 silly mapToRegistry registry https://registry.npmjs.org/
+128 silly mapToRegistry data Result {
+128 silly mapToRegistry   raw: 'postcss',
+128 silly mapToRegistry   scope: null,
+128 silly mapToRegistry   escapedName: 'postcss',
+128 silly mapToRegistry   name: 'postcss',
+128 silly mapToRegistry   rawSpec: '',
+128 silly mapToRegistry   spec: 'latest',
+128 silly mapToRegistry   type: 'tag' }
+129 silly mapToRegistry uri https://registry.npmjs.org/postcss
+130 silly fetchNamedPackageData postcss-modules-extract-imports
+131 silly mapToRegistry name postcss-modules-extract-imports
+132 silly mapToRegistry using default registry
+133 silly mapToRegistry registry https://registry.npmjs.org/
+134 silly mapToRegistry data Result {
+134 silly mapToRegistry   raw: 'postcss-modules-extract-imports',
+134 silly mapToRegistry   scope: null,
+134 silly mapToRegistry   escapedName: 'postcss-modules-extract-imports',
+134 silly mapToRegistry   name: 'postcss-modules-extract-imports',
+134 silly mapToRegistry   rawSpec: '',
+134 silly mapToRegistry   spec: 'latest',
+134 silly mapToRegistry   type: 'tag' }
+135 silly mapToRegistry uri https://registry.npmjs.org/postcss-modules-extract-imports
+136 silly fetchNamedPackageData postcss-modules-local-by-default
+137 silly mapToRegistry name postcss-modules-local-by-default
+138 silly mapToRegistry using default registry
+139 silly mapToRegistry registry https://registry.npmjs.org/
+140 silly mapToRegistry data Result {
+140 silly mapToRegistry   raw: 'postcss-modules-local-by-default',
+140 silly mapToRegistry   scope: null,
+140 silly mapToRegistry   escapedName: 'postcss-modules-local-by-default',
+140 silly mapToRegistry   name: 'postcss-modules-local-by-default',
+140 silly mapToRegistry   rawSpec: '',
+140 silly mapToRegistry   spec: 'latest',
+140 silly mapToRegistry   type: 'tag' }
+141 silly mapToRegistry uri https://registry.npmjs.org/postcss-modules-local-by-default
+142 silly fetchNamedPackageData postcss-modules-scope
+143 silly mapToRegistry name postcss-modules-scope
+144 silly mapToRegistry using default registry
+145 silly mapToRegistry registry https://registry.npmjs.org/
+146 silly mapToRegistry data Result {
+146 silly mapToRegistry   raw: 'postcss-modules-scope',
+146 silly mapToRegistry   scope: null,
+146 silly mapToRegistry   escapedName: 'postcss-modules-scope',
+146 silly mapToRegistry   name: 'postcss-modules-scope',
+146 silly mapToRegistry   rawSpec: '',
+146 silly mapToRegistry   spec: 'latest',
+146 silly mapToRegistry   type: 'tag' }
+147 silly mapToRegistry uri https://registry.npmjs.org/postcss-modules-scope
+148 silly fetchNamedPackageData postcss-modules-values
+149 silly mapToRegistry name postcss-modules-values
+150 silly mapToRegistry using default registry
+151 silly mapToRegistry registry https://registry.npmjs.org/
+152 silly mapToRegistry data Result {
+152 silly mapToRegistry   raw: 'postcss-modules-values',
+152 silly mapToRegistry   scope: null,
+152 silly mapToRegistry   escapedName: 'postcss-modules-values',
+152 silly mapToRegistry   name: 'postcss-modules-values',
+152 silly mapToRegistry   rawSpec: '',
+152 silly mapToRegistry   spec: 'latest',
+152 silly mapToRegistry   type: 'tag' }
+153 silly mapToRegistry uri https://registry.npmjs.org/postcss-modules-values
+154 verbose request uri https://registry.npmjs.org/babel-code-frame
+155 verbose request no auth needed
+156 info attempt registry request try #1 at 22:18:15
+157 verbose etag W/"57ec1c65-a305"
+158 verbose lastModified Wed, 28 Sep 2016 19:39:17 GMT
+159 http request GET https://registry.npmjs.org/babel-code-frame
+160 verbose request uri https://registry.npmjs.org/css-selector-tokenizer
+161 verbose request no auth needed
+162 info attempt registry request try #1 at 22:18:15
+163 verbose etag W/"57cdf615-6921"
+164 verbose lastModified Mon, 05 Sep 2016 22:47:49 GMT
+165 http request GET https://registry.npmjs.org/css-selector-tokenizer
+166 verbose request uri https://registry.npmjs.org/lodash.camelcase
+167 verbose request no auth needed
+168 info attempt registry request try #1 at 22:18:15
+169 verbose etag W/"57f67f93-39d3"
+170 verbose lastModified Thu, 06 Oct 2016 16:45:07 GMT
+171 http request GET https://registry.npmjs.org/lodash.camelcase
+172 verbose request uri https://registry.npmjs.org/cssnano
+173 verbose request no auth needed
+174 info attempt registry request try #1 at 22:18:15
+175 verbose etag W/"58416341-21b04"
+176 verbose lastModified Fri, 02 Dec 2016 12:04:17 GMT
+177 http request GET https://registry.npmjs.org/cssnano
+178 verbose request uri https://registry.npmjs.org/postcss
+179 verbose request no auth needed
+180 info attempt registry request try #1 at 22:18:15
+181 verbose etag W/"58344058-23572"
+182 verbose lastModified Tue, 22 Nov 2016 12:55:52 GMT
+183 http request GET https://registry.npmjs.org/postcss
+184 verbose request uri https://registry.npmjs.org/postcss-modules-local-by-default
+185 verbose request no auth needed
+186 info attempt registry request try #1 at 22:18:15
+187 verbose etag W/"583a3963-6af3"
+188 verbose lastModified Sun, 27 Nov 2016 01:39:47 GMT
+189 http request GET https://registry.npmjs.org/postcss-modules-local-by-default
+190 verbose request uri https://registry.npmjs.org/postcss-modules-extract-imports
+191 verbose request no auth needed
+192 info attempt registry request try #1 at 22:18:15
+193 verbose etag W/"573440e6-4f9e"
+194 verbose lastModified Thu, 12 May 2016 08:37:58 GMT
+195 http request GET https://registry.npmjs.org/postcss-modules-extract-imports
+196 verbose request uri https://registry.npmjs.org/postcss-modules-values
+197 verbose request no auth needed
+198 info attempt registry request try #1 at 22:18:15
+199 verbose etag W/"58276d9f-3af4"
+200 verbose lastModified Sat, 12 Nov 2016 19:29:35 GMT
+201 http request GET https://registry.npmjs.org/postcss-modules-values
+202 verbose request uri https://registry.npmjs.org/postcss-modules-scope
+203 verbose request no auth needed
+204 info attempt registry request try #1 at 22:18:15
+205 verbose etag W/"578f519e-6782"
+206 verbose lastModified Wed, 20 Jul 2016 10:25:34 GMT
+207 http request GET https://registry.npmjs.org/postcss-modules-scope
+208 http 304 https://registry.npmjs.org/css-selector-tokenizer
+209 verbose headers { date: 'Sat, 03 Dec 2016 14:16:27 GMT',
+209 verbose headers   via: '1.1 varnish',
+209 verbose headers   'cache-control': 'max-age=300',
+209 verbose headers   etag: 'W/"57cdf615-6921"',
+209 verbose headers   age: '0',
+209 verbose headers   connection: 'keep-alive',
+209 verbose headers   'x-served-by': 'cache-ams4449-AMS',
+209 verbose headers   'x-cache': 'HIT',
+209 verbose headers   'x-cache-hits': '1',
+209 verbose headers   'x-timer': 'S1480774587.320723,VS0,VE6',
+209 verbose headers   vary: 'Accept-Encoding' }
+210 silly get cb [ 304,
+210 silly get   { date: 'Sat, 03 Dec 2016 14:16:27 GMT',
+210 silly get     via: '1.1 varnish',
+210 silly get     'cache-control': 'max-age=300',
+210 silly get     etag: 'W/"57cdf615-6921"',
+210 silly get     age: '0',
+210 silly get     connection: 'keep-alive',
+210 silly get     'x-served-by': 'cache-ams4449-AMS',
+210 silly get     'x-cache': 'HIT',
+210 silly get     'x-cache-hits': '1',
+210 silly get     'x-timer': 'S1480774587.320723,VS0,VE6',
+210 silly get     vary: 'Accept-Encoding' } ]
+211 verbose etag https://registry.npmjs.org/css-selector-tokenizer from cache
+212 verbose get saving css-selector-tokenizer to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\css-selector-tokenizer\.cache.json
+213 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+214 silly resolveWithNewModule css-selector-tokenizer@0.7.0 checking installable status
+215 silly cache add args [ 'css-selector-tokenizer@^0.7.0', null ]
+216 verbose cache add spec css-selector-tokenizer@^0.7.0
+217 silly cache add parsed spec Result {
+217 silly cache add   raw: 'css-selector-tokenizer@^0.7.0',
+217 silly cache add   scope: null,
+217 silly cache add   escapedName: 'css-selector-tokenizer',
+217 silly cache add   name: 'css-selector-tokenizer',
+217 silly cache add   rawSpec: '^0.7.0',
+217 silly cache add   spec: '>=0.7.0 <0.8.0',
+217 silly cache add   type: 'range' }
+218 silly addNamed css-selector-tokenizer@>=0.7.0 <0.8.0
+219 verbose addNamed ">=0.7.0 <0.8.0" is a valid semver range for css-selector-tokenizer
+220 silly addNameRange { name: 'css-selector-tokenizer',
+220 silly addNameRange   range: '>=0.7.0 <0.8.0',
+220 silly addNameRange   hasData: false }
+221 silly mapToRegistry name css-selector-tokenizer
+222 silly mapToRegistry using default registry
+223 silly mapToRegistry registry https://registry.npmjs.org/
+224 silly mapToRegistry data Result {
+224 silly mapToRegistry   raw: 'css-selector-tokenizer',
+224 silly mapToRegistry   scope: null,
+224 silly mapToRegistry   escapedName: 'css-selector-tokenizer',
+224 silly mapToRegistry   name: 'css-selector-tokenizer',
+224 silly mapToRegistry   rawSpec: '',
+224 silly mapToRegistry   spec: 'latest',
+224 silly mapToRegistry   type: 'tag' }
+225 silly mapToRegistry uri https://registry.npmjs.org/css-selector-tokenizer
+226 verbose addNameRange registry:https://registry.npmjs.org/css-selector-tokenizer not in flight; fetching
+227 verbose get https://registry.npmjs.org/css-selector-tokenizer not expired, no request
+228 silly addNameRange number 2 { name: 'css-selector-tokenizer',
+228 silly addNameRange   range: '>=0.7.0 <0.8.0',
+228 silly addNameRange   hasData: true }
+229 silly addNameRange versions [ 'css-selector-tokenizer',
+229 silly addNameRange   [ '0.1.0',
+229 silly addNameRange     '0.2.0',
+229 silly addNameRange     '0.2.1',
+229 silly addNameRange     '0.3.0',
+229 silly addNameRange     '0.3.1',
+229 silly addNameRange     '0.4.0',
+229 silly addNameRange     '0.4.1',
+229 silly addNameRange     '0.5.0',
+229 silly addNameRange     '0.5.1',
+229 silly addNameRange     '0.5.2',
+229 silly addNameRange     '0.5.3',
+229 silly addNameRange     '0.5.4',
+229 silly addNameRange     '0.6.0',
+229 silly addNameRange     '0.7.0' ] ]
+230 silly addNamed css-selector-tokenizer@0.7.0
+231 verbose addNamed "0.7.0" is a plain semver version for css-selector-tokenizer
+232 silly cache afterAdd css-selector-tokenizer@0.7.0
+233 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\css-selector-tokenizer\0.7.0\package\package.json not in flight; writing
+234 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+235 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\css-selector-tokenizer\0.7.0\package\package.json written
+236 http 304 https://registry.npmjs.org/lodash.camelcase
+237 verbose headers { date: 'Sat, 03 Dec 2016 14:16:30 GMT',
+237 verbose headers   via: '1.1 varnish',
+237 verbose headers   'cache-control': 'max-age=300',
+237 verbose headers   etag: 'W/"57f67f93-39d3"',
+237 verbose headers   age: '245',
+237 verbose headers   connection: 'keep-alive',
+237 verbose headers   'x-served-by': 'cache-lcy1123-LCY',
+237 verbose headers   'x-cache': 'HIT',
+237 verbose headers   'x-cache-hits': '2',
+237 verbose headers   'x-timer': 'S1480774590.262288,VS0,VE0',
+237 verbose headers   vary: 'Accept-Encoding' }
+238 silly get cb [ 304,
+238 silly get   { date: 'Sat, 03 Dec 2016 14:16:30 GMT',
+238 silly get     via: '1.1 varnish',
+238 silly get     'cache-control': 'max-age=300',
+238 silly get     etag: 'W/"57f67f93-39d3"',
+238 silly get     age: '245',
+238 silly get     connection: 'keep-alive',
+238 silly get     'x-served-by': 'cache-lcy1123-LCY',
+238 silly get     'x-cache': 'HIT',
+238 silly get     'x-cache-hits': '2',
+238 silly get     'x-timer': 'S1480774590.262288,VS0,VE0',
+238 silly get     vary: 'Accept-Encoding' } ]
+239 verbose etag https://registry.npmjs.org/lodash.camelcase from cache
+240 verbose get saving lodash.camelcase to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\lodash.camelcase\.cache.json
+241 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+242 silly resolveWithNewModule lodash.camelcase@4.3.0 checking installable status
+243 silly cache add args [ 'lodash.camelcase@^4.3.0', null ]
+244 verbose cache add spec lodash.camelcase@^4.3.0
+245 silly cache add parsed spec Result {
+245 silly cache add   raw: 'lodash.camelcase@^4.3.0',
+245 silly cache add   scope: null,
+245 silly cache add   escapedName: 'lodash.camelcase',
+245 silly cache add   name: 'lodash.camelcase',
+245 silly cache add   rawSpec: '^4.3.0',
+245 silly cache add   spec: '>=4.3.0 <5.0.0',
+245 silly cache add   type: 'range' }
+246 silly addNamed lodash.camelcase@>=4.3.0 <5.0.0
+247 verbose addNamed ">=4.3.0 <5.0.0" is a valid semver range for lodash.camelcase
+248 silly addNameRange { name: 'lodash.camelcase',
+248 silly addNameRange   range: '>=4.3.0 <5.0.0',
+248 silly addNameRange   hasData: false }
+249 silly mapToRegistry name lodash.camelcase
+250 silly mapToRegistry using default registry
+251 silly mapToRegistry registry https://registry.npmjs.org/
+252 silly mapToRegistry data Result {
+252 silly mapToRegistry   raw: 'lodash.camelcase',
+252 silly mapToRegistry   scope: null,
+252 silly mapToRegistry   escapedName: 'lodash.camelcase',
+252 silly mapToRegistry   name: 'lodash.camelcase',
+252 silly mapToRegistry   rawSpec: '',
+252 silly mapToRegistry   spec: 'latest',
+252 silly mapToRegistry   type: 'tag' }
+253 silly mapToRegistry uri https://registry.npmjs.org/lodash.camelcase
+254 verbose addNameRange registry:https://registry.npmjs.org/lodash.camelcase not in flight; fetching
+255 verbose get https://registry.npmjs.org/lodash.camelcase not expired, no request
+256 silly addNameRange number 2 { name: 'lodash.camelcase',
+256 silly addNameRange   range: '>=4.3.0 <5.0.0',
+256 silly addNameRange   hasData: true }
+257 silly addNameRange versions [ 'lodash.camelcase',
+257 silly addNameRange   [ '3.0.0',
+257 silly addNameRange     '3.0.1',
+257 silly addNameRange     '4.0.0',
+257 silly addNameRange     '4.0.1',
+257 silly addNameRange     '4.1.0',
+257 silly addNameRange     '4.1.1',
+257 silly addNameRange     '4.2.0',
+257 silly addNameRange     '4.3.0' ] ]
+258 silly addNamed lodash.camelcase@4.3.0
+259 verbose addNamed "4.3.0" is a plain semver version for lodash.camelcase
+260 silly cache afterAdd lodash.camelcase@4.3.0
+261 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\lodash.camelcase\4.3.0\package\package.json not in flight; writing
+262 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+263 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\lodash.camelcase\4.3.0\package\package.json written
+264 http 304 https://registry.npmjs.org/postcss
+265 verbose headers { date: 'Sat, 03 Dec 2016 14:16:32 GMT',
+265 verbose headers   via: '1.1 varnish',
+265 verbose headers   'cache-control': 'max-age=300',
+265 verbose headers   etag: 'W/"58344058-23572"',
+265 verbose headers   age: '222',
+265 verbose headers   connection: 'keep-alive',
+265 verbose headers   'x-served-by': 'cache-lcy1129-LCY',
+265 verbose headers   'x-cache': 'HIT',
+265 verbose headers   'x-cache-hits': '1',
+265 verbose headers   'x-timer': 'S1480774592.548160,VS0,VE0',
+265 verbose headers   vary: 'Accept-Encoding' }
+266 silly get cb [ 304,
+266 silly get   { date: 'Sat, 03 Dec 2016 14:16:32 GMT',
+266 silly get     via: '1.1 varnish',
+266 silly get     'cache-control': 'max-age=300',
+266 silly get     etag: 'W/"58344058-23572"',
+266 silly get     age: '222',
+266 silly get     connection: 'keep-alive',
+266 silly get     'x-served-by': 'cache-lcy1129-LCY',
+266 silly get     'x-cache': 'HIT',
+266 silly get     'x-cache-hits': '1',
+266 silly get     'x-timer': 'S1480774592.548160,VS0,VE0',
+266 silly get     vary: 'Accept-Encoding' } ]
+267 verbose etag https://registry.npmjs.org/postcss from cache
+268 verbose get saving postcss to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\postcss\.cache.json
+269 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+270 silly resolveWithNewModule postcss@5.2.6 checking installable status
+271 silly cache add args [ 'postcss@^5.0.6', null ]
+272 verbose cache add spec postcss@^5.0.6
+273 silly cache add parsed spec Result {
+273 silly cache add   raw: 'postcss@^5.0.6',
+273 silly cache add   scope: null,
+273 silly cache add   escapedName: 'postcss',
+273 silly cache add   name: 'postcss',
+273 silly cache add   rawSpec: '^5.0.6',
+273 silly cache add   spec: '>=5.0.6 <6.0.0',
+273 silly cache add   type: 'range' }
+274 silly addNamed postcss@>=5.0.6 <6.0.0
+275 verbose addNamed ">=5.0.6 <6.0.0" is a valid semver range for postcss
+276 silly addNameRange { name: 'postcss', range: '>=5.0.6 <6.0.0', hasData: false }
+277 silly mapToRegistry name postcss
+278 silly mapToRegistry using default registry
+279 silly mapToRegistry registry https://registry.npmjs.org/
+280 silly mapToRegistry data Result {
+280 silly mapToRegistry   raw: 'postcss',
+280 silly mapToRegistry   scope: null,
+280 silly mapToRegistry   escapedName: 'postcss',
+280 silly mapToRegistry   name: 'postcss',
+280 silly mapToRegistry   rawSpec: '',
+280 silly mapToRegistry   spec: 'latest',
+280 silly mapToRegistry   type: 'tag' }
+281 silly mapToRegistry uri https://registry.npmjs.org/postcss
+282 verbose addNameRange registry:https://registry.npmjs.org/postcss not in flight; fetching
+283 verbose get https://registry.npmjs.org/postcss not expired, no request
+284 silly addNameRange number 2 { name: 'postcss', range: '>=5.0.6 <6.0.0', hasData: true }
+285 silly addNameRange versions [ 'postcss',
+285 silly addNameRange   [ '0.1.0',
+285 silly addNameRange     '0.2.0',
+285 silly addNameRange     '0.3.0',
+285 silly addNameRange     '0.3.1',
+285 silly addNameRange     '0.3.2',
+285 silly addNameRange     '0.3.3',
+285 silly addNameRange     '0.3.4',
+285 silly addNameRange     '0.3.5',
+285 silly addNameRange     '1.0.0',
+285 silly addNameRange     '2.0.0',
+285 silly addNameRange     '2.1.0',
+285 silly addNameRange     '2.1.1',
+285 silly addNameRange     '2.1.2',
+285 silly addNameRange     '2.2.0',
+285 silly addNameRange     '2.2.1',
+285 silly addNameRange     '2.2.2',
+285 silly addNameRange     '2.2.3',
+285 silly addNameRange     '2.2.4',
+285 silly addNameRange     '2.2.5',
+285 silly addNameRange     '2.2.6',
+285 silly addNameRange     '3.0.0',
+285 silly addNameRange     '3.0.1',
+285 silly addNameRange     '3.0.2',
+285 silly addNameRange     '3.0.3',
+285 silly addNameRange     '3.0.4',
+285 silly addNameRange     '3.0.5',
+285 silly addNameRange     '3.0.6',
+285 silly addNameRange     '3.0.7',
+285 silly addNameRange     '4.0.0',
+285 silly addNameRange     '4.0.1',
+285 silly addNameRange     '4.0.2',
+285 silly addNameRange     '4.0.3',
+285 silly addNameRange     '4.0.4',
+285 silly addNameRange     '4.0.5',
+285 silly addNameRange     '4.0.6',
+285 silly addNameRange     '4.1.0',
+285 silly addNameRange     '4.1.1',
+285 silly addNameRange     '4.1.2',
+285 silly addNameRange     '4.1.3',
+285 silly addNameRange     '4.1.4',
+285 silly addNameRange     '4.1.5',
+285 silly addNameRange     '4.1.6',
+285 silly addNameRange     '4.1.7',
+285 silly addNameRange     '4.1.8',
+285 silly addNameRange     '4.1.9',
+285 silly addNameRange     '4.1.10',
+285 silly addNameRange     '4.1.11',
+285 silly addNameRange     '4.1.12',
+285 silly addNameRange     '4.1.13',
+285 silly addNameRange     '4.1.14',
+285 silly addNameRange     '4.1.15',
+285 silly addNameRange     '4.1.16',
+285 silly addNameRange     '5.0.0',
+285 silly addNameRange     '5.0.1',
+285 silly addNameRange     '5.0.2',
+285 silly addNameRange     '5.0.3',
+285 silly addNameRange     '5.0.4',
+285 silly addNameRange     '5.0.5',
+285 silly addNameRange     '5.0.6',
+285 silly addNameRange     '5.0.7',
+285 silly addNameRange     '5.0.8',
+285 silly addNameRange     '5.0.9',
+285 silly addNameRange     '5.0.10',
+285 silly addNameRange     '5.0.11',
+285 silly addNameRange     '5.0.12',
+285 silly addNameRange     '5.0.13',
+285 silly addNameRange     '5.0.14',
+285 silly addNameRange     '5.0.15',
+285 silly addNameRange     '5.0.16',
+285 silly addNameRange     '5.0.17',
+285 silly addNameRange     '5.0.18',
+285 silly addNameRange     '5.0.19',
+285 silly addNameRange     '5.0.20',
+285 silly addNameRange     '5.0.21',
+285 silly addNameRange     '5.1.0',
+285 silly addNameRange     '5.1.1',
+285 silly addNameRange     '5.1.2',
+285 silly addNameRange     '5.2.0',
+285 silly addNameRange     '5.2.1',
+285 silly addNameRange     '5.2.2',
+285 silly addNameRange     '5.2.3',
+285 silly addNameRange     '5.2.4',
+285 silly addNameRange     '5.2.5',
+285 silly addNameRange     '5.2.6' ] ]
+286 silly addNamed postcss@5.2.6
+287 verbose addNamed "5.2.6" is a plain semver version for postcss
+288 silly mapToRegistry name postcss
+289 silly mapToRegistry using default registry
+290 silly mapToRegistry registry https://registry.npmjs.org/
+291 silly mapToRegistry data Result {
+291 silly mapToRegistry   raw: 'postcss',
+291 silly mapToRegistry   scope: null,
+291 silly mapToRegistry   escapedName: 'postcss',
+291 silly mapToRegistry   name: 'postcss',
+291 silly mapToRegistry   rawSpec: '',
+291 silly mapToRegistry   spec: 'latest',
+291 silly mapToRegistry   type: 'tag' }
+292 silly mapToRegistry uri https://registry.npmjs.org/postcss
+293 verbose addRemoteTarball https://registry.npmjs.org/postcss/-/postcss-5.2.6.tgz not in flight; adding
+294 verbose addRemoteTarball [ 'https://registry.npmjs.org/postcss/-/postcss-5.2.6.tgz',
+294 verbose addRemoteTarball   'a252cd67cd52585035f17e9ad12b35137a7bdd9e' ]
+295 info retry fetch attempt 1 at 22:18:21
+296 info attempt registry request try #1 at 22:18:21
+297 http fetch GET https://registry.npmjs.org/postcss/-/postcss-5.2.6.tgz
+298 http fetch 200 https://registry.npmjs.org/postcss/-/postcss-5.2.6.tgz
+299 http 304 https://registry.npmjs.org/postcss-modules-values
+300 verbose headers { date: 'Sat, 03 Dec 2016 14:16:33 GMT',
+300 verbose headers   via: '1.1 varnish',
+300 verbose headers   'cache-control': 'max-age=300',
+300 verbose headers   etag: 'W/"58276d9f-3af4"',
+300 verbose headers   age: '248',
+300 verbose headers   connection: 'keep-alive',
+300 verbose headers   'x-served-by': 'cache-lcy1139-LCY',
+300 verbose headers   'x-cache': 'HIT',
+300 verbose headers   'x-cache-hits': '1',
+300 verbose headers   'x-timer': 'S1480774593.892398,VS0,VE0',
+300 verbose headers   vary: 'Accept-Encoding' }
+301 silly get cb [ 304,
+301 silly get   { date: 'Sat, 03 Dec 2016 14:16:33 GMT',
+301 silly get     via: '1.1 varnish',
+301 silly get     'cache-control': 'max-age=300',
+301 silly get     etag: 'W/"58276d9f-3af4"',
+301 silly get     age: '248',
+301 silly get     connection: 'keep-alive',
+301 silly get     'x-served-by': 'cache-lcy1139-LCY',
+301 silly get     'x-cache': 'HIT',
+301 silly get     'x-cache-hits': '1',
+301 silly get     'x-timer': 'S1480774593.892398,VS0,VE0',
+301 silly get     vary: 'Accept-Encoding' } ]
+302 verbose etag https://registry.npmjs.org/postcss-modules-values from cache
+303 verbose get saving postcss-modules-values to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\postcss-modules-values\.cache.json
+304 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+305 silly resolveWithNewModule postcss-modules-values@1.2.2 checking installable status
+306 silly cache add args [ 'postcss-modules-values@^1.1.0', null ]
+307 verbose cache add spec postcss-modules-values@^1.1.0
+308 silly cache add parsed spec Result {
+308 silly cache add   raw: 'postcss-modules-values@^1.1.0',
+308 silly cache add   scope: null,
+308 silly cache add   escapedName: 'postcss-modules-values',
+308 silly cache add   name: 'postcss-modules-values',
+308 silly cache add   rawSpec: '^1.1.0',
+308 silly cache add   spec: '>=1.1.0 <2.0.0',
+308 silly cache add   type: 'range' }
+309 silly addNamed postcss-modules-values@>=1.1.0 <2.0.0
+310 verbose addNamed ">=1.1.0 <2.0.0" is a valid semver range for postcss-modules-values
+311 silly addNameRange { name: 'postcss-modules-values',
+311 silly addNameRange   range: '>=1.1.0 <2.0.0',
+311 silly addNameRange   hasData: false }
+312 silly mapToRegistry name postcss-modules-values
+313 silly mapToRegistry using default registry
+314 silly mapToRegistry registry https://registry.npmjs.org/
+315 silly mapToRegistry data Result {
+315 silly mapToRegistry   raw: 'postcss-modules-values',
+315 silly mapToRegistry   scope: null,
+315 silly mapToRegistry   escapedName: 'postcss-modules-values',
+315 silly mapToRegistry   name: 'postcss-modules-values',
+315 silly mapToRegistry   rawSpec: '',
+315 silly mapToRegistry   spec: 'latest',
+315 silly mapToRegistry   type: 'tag' }
+316 silly mapToRegistry uri https://registry.npmjs.org/postcss-modules-values
+317 verbose addNameRange registry:https://registry.npmjs.org/postcss-modules-values not in flight; fetching
+318 verbose get https://registry.npmjs.org/postcss-modules-values not expired, no request
+319 silly addNameRange number 2 { name: 'postcss-modules-values',
+319 silly addNameRange   range: '>=1.1.0 <2.0.0',
+319 silly addNameRange   hasData: true }
+320 silly addNameRange versions [ 'postcss-modules-values',
+320 silly addNameRange   [ '1.0.0',
+320 silly addNameRange     '1.1.0',
+320 silly addNameRange     '1.1.1',
+320 silly addNameRange     '1.1.2',
+320 silly addNameRange     '1.1.3',
+320 silly addNameRange     '1.2.0',
+320 silly addNameRange     '1.2.1',
+320 silly addNameRange     '1.2.2' ] ]
+321 silly addNamed postcss-modules-values@1.2.2
+322 verbose addNamed "1.2.2" is a plain semver version for postcss-modules-values
+323 silly cache afterAdd postcss-modules-values@1.2.2
+324 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\postcss-modules-values\1.2.2\package\package.json not in flight; writing
+325 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+326 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\postcss-modules-values\1.2.2\package\package.json written
+327 http 304 https://registry.npmjs.org/babel-code-frame
+328 verbose headers { date: 'Sat, 03 Dec 2016 14:16:36 GMT',
+328 verbose headers   via: '1.1 varnish',
+328 verbose headers   'cache-control': 'max-age=300',
+328 verbose headers   etag: 'W/"57ec1c65-a305"',
+328 verbose headers   age: '111',
+328 verbose headers   connection: 'keep-alive',
+328 verbose headers   'x-served-by': 'cache-lcy1144-LCY',
+328 verbose headers   'x-cache': 'HIT',
+328 verbose headers   'x-cache-hits': '1',
+328 verbose headers   'x-timer': 'S1480774596.165101,VS0,VE0',
+328 verbose headers   vary: 'Accept-Encoding' }
+329 silly get cb [ 304,
+329 silly get   { date: 'Sat, 03 Dec 2016 14:16:36 GMT',
+329 silly get     via: '1.1 varnish',
+329 silly get     'cache-control': 'max-age=300',
+329 silly get     etag: 'W/"57ec1c65-a305"',
+329 silly get     age: '111',
+329 silly get     connection: 'keep-alive',
+329 silly get     'x-served-by': 'cache-lcy1144-LCY',
+329 silly get     'x-cache': 'HIT',
+329 silly get     'x-cache-hits': '1',
+329 silly get     'x-timer': 'S1480774596.165101,VS0,VE0',
+329 silly get     vary: 'Accept-Encoding' } ]
+330 verbose etag https://registry.npmjs.org/babel-code-frame from cache
+331 verbose get saving babel-code-frame to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\babel-code-frame\.cache.json
+332 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+333 silly resolveWithNewModule babel-code-frame@6.16.0 checking installable status
+334 silly cache add args [ 'babel-code-frame@^6.11.0', null ]
+335 verbose cache add spec babel-code-frame@^6.11.0
+336 silly cache add parsed spec Result {
+336 silly cache add   raw: 'babel-code-frame@^6.11.0',
+336 silly cache add   scope: null,
+336 silly cache add   escapedName: 'babel-code-frame',
+336 silly cache add   name: 'babel-code-frame',
+336 silly cache add   rawSpec: '^6.11.0',
+336 silly cache add   spec: '>=6.11.0 <7.0.0',
+336 silly cache add   type: 'range' }
+337 silly addNamed babel-code-frame@>=6.11.0 <7.0.0
+338 verbose addNamed ">=6.11.0 <7.0.0" is a valid semver range for babel-code-frame
+339 silly addNameRange { name: 'babel-code-frame',
+339 silly addNameRange   range: '>=6.11.0 <7.0.0',
+339 silly addNameRange   hasData: false }
+340 silly mapToRegistry name babel-code-frame
+341 silly mapToRegistry using default registry
+342 silly mapToRegistry registry https://registry.npmjs.org/
+343 silly mapToRegistry data Result {
+343 silly mapToRegistry   raw: 'babel-code-frame',
+343 silly mapToRegistry   scope: null,
+343 silly mapToRegistry   escapedName: 'babel-code-frame',
+343 silly mapToRegistry   name: 'babel-code-frame',
+343 silly mapToRegistry   rawSpec: '',
+343 silly mapToRegistry   spec: 'latest',
+343 silly mapToRegistry   type: 'tag' }
+344 silly mapToRegistry uri https://registry.npmjs.org/babel-code-frame
+345 verbose addNameRange registry:https://registry.npmjs.org/babel-code-frame not in flight; fetching
+346 verbose get https://registry.npmjs.org/babel-code-frame not expired, no request
+347 silly addNameRange number 2 { name: 'babel-code-frame',
+347 silly addNameRange   range: '>=6.11.0 <7.0.0',
+347 silly addNameRange   hasData: true }
+348 silly addNameRange versions [ 'babel-code-frame',
+348 silly addNameRange   [ '6.0.0',
+348 silly addNameRange     '6.0.2',
+348 silly addNameRange     '6.0.12',
+348 silly addNameRange     '6.0.14',
+348 silly addNameRange     '6.0.15',
+348 silly addNameRange     '6.1.4',
+348 silly addNameRange     '6.1.5',
+348 silly addNameRange     '6.1.6',
+348 silly addNameRange     '6.1.7',
+348 silly addNameRange     '6.1.8',
+348 silly addNameRange     '6.1.9',
+348 silly addNameRange     '6.1.10',
+348 silly addNameRange     '6.1.11',
+348 silly addNameRange     '6.1.12',
+348 silly addNameRange     '6.1.13',
+348 silly addNameRange     '6.1.14',
+348 silly addNameRange     '6.1.15',
+348 silly addNameRange     '6.1.16',
+348 silly addNameRange     '6.1.17',
+348 silly addNameRange     '6.1.18',
+348 silly addNameRange     '6.2.4',
+348 silly addNameRange     '6.3.13',
+348 silly addNameRange     '6.5.0',
+348 silly addNameRange     '6.5.0-1',
+348 silly addNameRange     '6.6.0',
+348 silly addNameRange     '6.6.5',
+348 silly addNameRange     '6.7.2',
+348 silly addNameRange     '6.7.3',
+348 silly addNameRange     '6.7.4',
+348 silly addNameRange     '6.7.5',
+348 silly addNameRange     '6.7.7',
+348 silly addNameRange     '6.8.0',
+348 silly addNameRange     '6.11.0',
+348 silly addNameRange     '6.16.0' ] ]
+349 silly addNamed babel-code-frame@6.16.0
+350 verbose addNamed "6.16.0" is a plain semver version for babel-code-frame
+351 silly cache afterAdd babel-code-frame@6.16.0
+352 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\babel-code-frame\6.16.0\package\package.json not in flight; writing
+353 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+354 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\babel-code-frame\6.16.0\package\package.json written
+355 http 304 https://registry.npmjs.org/postcss-modules-extract-imports
+356 verbose headers { date: 'Sat, 03 Dec 2016 14:16:34 GMT',
+356 verbose headers   via: '1.1 varnish',
+356 verbose headers   'cache-control': 'max-age=300',
+356 verbose headers   etag: 'W/"573440e6-4f9e"',
+356 verbose headers   age: '16',
+356 verbose headers   connection: 'keep-alive',
+356 verbose headers   'x-served-by': 'cache-lcy1138-LCY',
+356 verbose headers   'x-cache': 'HIT',
+356 verbose headers   'x-cache-hits': '1',
+356 verbose headers   'x-timer': 'S1480774594.324705,VS0,VE0',
+356 verbose headers   vary: 'Accept-Encoding' }
+357 silly get cb [ 304,
+357 silly get   { date: 'Sat, 03 Dec 2016 14:16:34 GMT',
+357 silly get     via: '1.1 varnish',
+357 silly get     'cache-control': 'max-age=300',
+357 silly get     etag: 'W/"573440e6-4f9e"',
+357 silly get     age: '16',
+357 silly get     connection: 'keep-alive',
+357 silly get     'x-served-by': 'cache-lcy1138-LCY',
+357 silly get     'x-cache': 'HIT',
+357 silly get     'x-cache-hits': '1',
+357 silly get     'x-timer': 'S1480774594.324705,VS0,VE0',
+357 silly get     vary: 'Accept-Encoding' } ]
+358 verbose etag https://registry.npmjs.org/postcss-modules-extract-imports from cache
+359 verbose get saving postcss-modules-extract-imports to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\postcss-modules-extract-imports\.cache.json
+360 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+361 silly resolveWithNewModule postcss-modules-extract-imports@1.0.1 checking installable status
+362 silly cache add args [ 'postcss-modules-extract-imports@^1.0.0', null ]
+363 verbose cache add spec postcss-modules-extract-imports@^1.0.0
+364 silly cache add parsed spec Result {
+364 silly cache add   raw: 'postcss-modules-extract-imports@^1.0.0',
+364 silly cache add   scope: null,
+364 silly cache add   escapedName: 'postcss-modules-extract-imports',
+364 silly cache add   name: 'postcss-modules-extract-imports',
+364 silly cache add   rawSpec: '^1.0.0',
+364 silly cache add   spec: '>=1.0.0 <2.0.0',
+364 silly cache add   type: 'range' }
+365 silly addNamed postcss-modules-extract-imports@>=1.0.0 <2.0.0
+366 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for postcss-modules-extract-imports
+367 silly addNameRange { name: 'postcss-modules-extract-imports',
+367 silly addNameRange   range: '>=1.0.0 <2.0.0',
+367 silly addNameRange   hasData: false }
+368 silly mapToRegistry name postcss-modules-extract-imports
+369 silly mapToRegistry using default registry
+370 silly mapToRegistry registry https://registry.npmjs.org/
+371 silly mapToRegistry data Result {
+371 silly mapToRegistry   raw: 'postcss-modules-extract-imports',
+371 silly mapToRegistry   scope: null,
+371 silly mapToRegistry   escapedName: 'postcss-modules-extract-imports',
+371 silly mapToRegistry   name: 'postcss-modules-extract-imports',
+371 silly mapToRegistry   rawSpec: '',
+371 silly mapToRegistry   spec: 'latest',
+371 silly mapToRegistry   type: 'tag' }
+372 silly mapToRegistry uri https://registry.npmjs.org/postcss-modules-extract-imports
+373 verbose addNameRange registry:https://registry.npmjs.org/postcss-modules-extract-imports not in flight; fetching
+374 verbose get https://registry.npmjs.org/postcss-modules-extract-imports not expired, no request
+375 silly addNameRange number 2 { name: 'postcss-modules-extract-imports',
+375 silly addNameRange   range: '>=1.0.0 <2.0.0',
+375 silly addNameRange   hasData: true }
+376 silly addNameRange versions [ 'postcss-modules-extract-imports',
+376 silly addNameRange   [ '0.0.1',
+376 silly addNameRange     '0.0.2',
+376 silly addNameRange     '0.0.3',
+376 silly addNameRange     '0.0.4',
+376 silly addNameRange     '0.0.5',
+376 silly addNameRange     '1.0.0-beta1',
+376 silly addNameRange     '0.0.6',
+376 silly addNameRange     '1.0.0-beta2',
+376 silly addNameRange     '1.0.0',
+376 silly addNameRange     '1.0.1' ] ]
+377 silly addNamed postcss-modules-extract-imports@1.0.1
+378 verbose addNamed "1.0.1" is a plain semver version for postcss-modules-extract-imports
+379 silly cache afterAdd postcss-modules-extract-imports@1.0.1
+380 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\postcss-modules-extract-imports\1.0.1\package\package.json not in flight; writing
+381 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+382 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\postcss-modules-extract-imports\1.0.1\package\package.json written
+383 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.16.162:443
+384 info retry will retry, error on last attempt: Error: read ECONNRESET
+385 http 304 https://registry.npmjs.org/cssnano
+386 verbose headers { date: 'Sat, 03 Dec 2016 14:16:45 GMT',
+386 verbose headers   via: '1.1 varnish',
+386 verbose headers   'cache-control': 'max-age=300',
+386 verbose headers   etag: 'W/"58416341-21b04"',
+386 verbose headers   age: '282',
+386 verbose headers   connection: 'keep-alive',
+386 verbose headers   'x-served-by': 'cache-lcy1125-LCY',
+386 verbose headers   'x-cache': 'HIT',
+386 verbose headers   'x-cache-hits': '1',
+386 verbose headers   'x-timer': 'S1480774605.536776,VS0,VE0',
+386 verbose headers   vary: 'Accept-Encoding' }
+387 silly get cb [ 304,
+387 silly get   { date: 'Sat, 03 Dec 2016 14:16:45 GMT',
+387 silly get     via: '1.1 varnish',
+387 silly get     'cache-control': 'max-age=300',
+387 silly get     etag: 'W/"58416341-21b04"',
+387 silly get     age: '282',
+387 silly get     connection: 'keep-alive',
+387 silly get     'x-served-by': 'cache-lcy1125-LCY',
+387 silly get     'x-cache': 'HIT',
+387 silly get     'x-cache-hits': '1',
+387 silly get     'x-timer': 'S1480774605.536776,VS0,VE0',
+387 silly get     vary: 'Accept-Encoding' } ]
+388 verbose etag https://registry.npmjs.org/cssnano from cache
+389 verbose get saving cssnano to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\cssnano\.cache.json
+390 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+391 silly resolveWithNewModule cssnano@3.8.1 checking installable status
+392 silly cache add args [ 'cssnano@>=2.6.1 <4', null ]
+393 verbose cache add spec cssnano@>=2.6.1 <4
+394 silly cache add parsed spec Result {
+394 silly cache add   raw: 'cssnano@>=2.6.1 <4',
+394 silly cache add   scope: null,
+394 silly cache add   escapedName: 'cssnano',
+394 silly cache add   name: 'cssnano',
+394 silly cache add   rawSpec: '>=2.6.1 <4',
+394 silly cache add   spec: '>=2.6.1 <4.0.0',
+394 silly cache add   type: 'range' }
+395 silly addNamed cssnano@>=2.6.1 <4.0.0
+396 verbose addNamed ">=2.6.1 <4.0.0" is a valid semver range for cssnano
+397 silly addNameRange { name: 'cssnano', range: '>=2.6.1 <4.0.0', hasData: false }
+398 silly mapToRegistry name cssnano
+399 silly mapToRegistry using default registry
+400 silly mapToRegistry registry https://registry.npmjs.org/
+401 silly mapToRegistry data Result {
+401 silly mapToRegistry   raw: 'cssnano',
+401 silly mapToRegistry   scope: null,
+401 silly mapToRegistry   escapedName: 'cssnano',
+401 silly mapToRegistry   name: 'cssnano',
+401 silly mapToRegistry   rawSpec: '',
+401 silly mapToRegistry   spec: 'latest',
+401 silly mapToRegistry   type: 'tag' }
+402 silly mapToRegistry uri https://registry.npmjs.org/cssnano
+403 verbose addNameRange registry:https://registry.npmjs.org/cssnano not in flight; fetching
+404 verbose get https://registry.npmjs.org/cssnano not expired, no request
+405 silly addNameRange number 2 { name: 'cssnano', range: '>=2.6.1 <4.0.0', hasData: true }
+406 silly addNameRange versions [ 'cssnano',
+406 silly addNameRange   [ '1.0.0',
+406 silly addNameRange     '1.0.1',
+406 silly addNameRange     '1.0.2',
+406 silly addNameRange     '1.1.0',
+406 silly addNameRange     '1.2.0',
+406 silly addNameRange     '1.2.1',
+406 silly addNameRange     '1.3.0',
+406 silly addNameRange     '1.3.1',
+406 silly addNameRange     '1.3.2',
+406 silly addNameRange     '1.3.3',
+406 silly addNameRange     '1.4.0',
+406 silly addNameRange     '1.4.1',
+406 silly addNameRange     '1.4.2',
+406 silly addNameRange     '1.4.3',
+406 silly addNameRange     '2.0.0',
+406 silly addNameRange     '2.0.1',
+406 silly addNameRange     '2.0.2',
+406 silly addNameRange     '2.0.3',
+406 silly addNameRange     '2.1.0',
+406 silly addNameRange     '2.1.1',
+406 silly addNameRange     '2.2.0',
+406 silly addNameRange     '2.3.0',
+406 silly addNameRange     '2.4.0',
+406 silly addNameRange     '2.5.0',
+406 silly addNameRange     '2.6.0',
+406 silly addNameRange     '2.6.1',
+406 silly addNameRange     '3.0.0',
+406 silly addNameRange     '3.0.1',
+406 silly addNameRange     '3.0.2',
+406 silly addNameRange     '3.0.3',
+406 silly addNameRange     '3.1.0',
+406 silly addNameRange     '3.2.0',
+406 silly addNameRange     '3.3.0',
+406 silly addNameRange     '3.3.1',
+406 silly addNameRange     '3.3.2',
+406 silly addNameRange     '3.4.0',
+406 silly addNameRange     '3.5.0',
+406 silly addNameRange     '3.5.1',
+406 silly addNameRange     '3.5.2',
+406 silly addNameRange     '3.6.0',
+406 silly addNameRange     '3.6.1',
+406 silly addNameRange     '3.6.2',
+406 silly addNameRange     '3.7.0',
+406 silly addNameRange     '3.7.1',
+406 silly addNameRange     '3.7.2',
+406 silly addNameRange     '3.7.3',
+406 silly addNameRange     '3.7.4',
+406 silly addNameRange     '3.7.5',
+406 silly addNameRange     '3.7.6',
+406 silly addNameRange     '3.7.7',
+406 silly addNameRange     '3.8.0',
+406 silly addNameRange     '3.8.1' ] ]
+407 silly addNamed cssnano@3.8.1
+408 verbose addNamed "3.8.1" is a plain semver version for cssnano
+409 silly cache afterAdd cssnano@3.8.1
+410 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\cssnano\3.8.1\package\package.json not in flight; writing
+411 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+412 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\cssnano\3.8.1\package\package.json written
+413 info attempt registry request try #2 at 22:18:46
+414 verbose etag W/"578f519e-6782"
+415 verbose lastModified Wed, 20 Jul 2016 10:25:34 GMT
+416 http request GET https://registry.npmjs.org/postcss-modules-scope
+417 http 304 https://registry.npmjs.org/postcss-modules-scope
+418 verbose headers { date: 'Sat, 03 Dec 2016 14:16:58 GMT',
+418 verbose headers   via: '1.1 varnish',
+418 verbose headers   'cache-control': 'max-age=300',
+418 verbose headers   etag: 'W/"578f519e-6782"',
+418 verbose headers   age: '167',
+418 verbose headers   connection: 'keep-alive',
+418 verbose headers   'x-served-by': 'cache-lcy1123-LCY',
+418 verbose headers   'x-cache': 'HIT',
+418 verbose headers   'x-cache-hits': '1',
+418 verbose headers   'x-timer': 'S1480774618.427201,VS0,VE0',
+418 verbose headers   vary: 'Accept-Encoding' }
+419 silly get cb [ 304,
+419 silly get   { date: 'Sat, 03 Dec 2016 14:16:58 GMT',
+419 silly get     via: '1.1 varnish',
+419 silly get     'cache-control': 'max-age=300',
+419 silly get     etag: 'W/"578f519e-6782"',
+419 silly get     age: '167',
+419 silly get     connection: 'keep-alive',
+419 silly get     'x-served-by': 'cache-lcy1123-LCY',
+419 silly get     'x-cache': 'HIT',
+419 silly get     'x-cache-hits': '1',
+419 silly get     'x-timer': 'S1480774618.427201,VS0,VE0',
+419 silly get     vary: 'Accept-Encoding' } ]
+420 verbose etag https://registry.npmjs.org/postcss-modules-scope from cache
+421 verbose get saving postcss-modules-scope to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\postcss-modules-scope\.cache.json
+422 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+423 silly resolveWithNewModule postcss-modules-scope@1.0.2 checking installable status
+424 silly cache add args [ 'postcss-modules-scope@^1.0.0', null ]
+425 verbose cache add spec postcss-modules-scope@^1.0.0
+426 silly cache add parsed spec Result {
+426 silly cache add   raw: 'postcss-modules-scope@^1.0.0',
+426 silly cache add   scope: null,
+426 silly cache add   escapedName: 'postcss-modules-scope',
+426 silly cache add   name: 'postcss-modules-scope',
+426 silly cache add   rawSpec: '^1.0.0',
+426 silly cache add   spec: '>=1.0.0 <2.0.0',
+426 silly cache add   type: 'range' }
+427 silly addNamed postcss-modules-scope@>=1.0.0 <2.0.0
+428 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for postcss-modules-scope
+429 silly addNameRange { name: 'postcss-modules-scope',
+429 silly addNameRange   range: '>=1.0.0 <2.0.0',
+429 silly addNameRange   hasData: false }
+430 silly mapToRegistry name postcss-modules-scope
+431 silly mapToRegistry using default registry
+432 silly mapToRegistry registry https://registry.npmjs.org/
+433 silly mapToRegistry data Result {
+433 silly mapToRegistry   raw: 'postcss-modules-scope',
+433 silly mapToRegistry   scope: null,
+433 silly mapToRegistry   escapedName: 'postcss-modules-scope',
+433 silly mapToRegistry   name: 'postcss-modules-scope',
+433 silly mapToRegistry   rawSpec: '',
+433 silly mapToRegistry   spec: 'latest',
+433 silly mapToRegistry   type: 'tag' }
+434 silly mapToRegistry uri https://registry.npmjs.org/postcss-modules-scope
+435 verbose addNameRange registry:https://registry.npmjs.org/postcss-modules-scope not in flight; fetching
+436 verbose get https://registry.npmjs.org/postcss-modules-scope not expired, no request
+437 silly addNameRange number 2 { name: 'postcss-modules-scope',
+437 silly addNameRange   range: '>=1.0.0 <2.0.0',
+437 silly addNameRange   hasData: true }
+438 silly addNameRange versions [ 'postcss-modules-scope',
+438 silly addNameRange   [ '0.0.1',
+438 silly addNameRange     '0.0.2',
+438 silly addNameRange     '0.0.3',
+438 silly addNameRange     '0.0.4',
+438 silly addNameRange     '0.0.5',
+438 silly addNameRange     '0.0.6',
+438 silly addNameRange     '0.0.7',
+438 silly addNameRange     '0.0.8',
+438 silly addNameRange     '1.0.0-beta1',
+438 silly addNameRange     '1.0.0-beta2',
+438 silly addNameRange     '1.0.0',
+438 silly addNameRange     '1.0.1',
+438 silly addNameRange     '1.0.2' ] ]
+439 silly addNamed postcss-modules-scope@1.0.2
+440 verbose addNamed "1.0.2" is a plain semver version for postcss-modules-scope
+441 silly cache afterAdd postcss-modules-scope@1.0.2
+442 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\postcss-modules-scope\1.0.2\package\package.json not in flight; writing
+443 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+444 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\postcss-modules-scope\1.0.2\package\package.json written
+445 info attempt registry request try #2 at 22:18:50
+446 verbose etag W/"583a3963-6af3"
+447 verbose lastModified Sun, 27 Nov 2016 01:39:47 GMT
+448 http request GET https://registry.npmjs.org/postcss-modules-local-by-default
+449 http 304 https://registry.npmjs.org/postcss-modules-local-by-default
+450 verbose headers { date: 'Sat, 03 Dec 2016 14:17:01 GMT',
+450 verbose headers   via: '1.1 varnish',
+450 verbose headers   'cache-control': 'max-age=300',
+450 verbose headers   etag: 'W/"583a3963-6af3"',
+450 verbose headers   age: '276',
+450 verbose headers   connection: 'keep-alive',
+450 verbose headers   'x-served-by': 'cache-lcy1129-LCY',
+450 verbose headers   'x-cache': 'HIT',
+450 verbose headers   'x-cache-hits': '3',
+450 verbose headers   'x-timer': 'S1480774621.874459,VS0,VE0',
+450 verbose headers   vary: 'Accept-Encoding' }
+451 silly get cb [ 304,
+451 silly get   { date: 'Sat, 03 Dec 2016 14:17:01 GMT',
+451 silly get     via: '1.1 varnish',
+451 silly get     'cache-control': 'max-age=300',
+451 silly get     etag: 'W/"583a3963-6af3"',
+451 silly get     age: '276',
+451 silly get     connection: 'keep-alive',
+451 silly get     'x-served-by': 'cache-lcy1129-LCY',
+451 silly get     'x-cache': 'HIT',
+451 silly get     'x-cache-hits': '3',
+451 silly get     'x-timer': 'S1480774621.874459,VS0,VE0',
+451 silly get     vary: 'Accept-Encoding' } ]
+452 verbose etag https://registry.npmjs.org/postcss-modules-local-by-default from cache
+453 verbose get saving postcss-modules-local-by-default to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\postcss-modules-local-by-default\.cache.json
+454 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+455 silly resolveWithNewModule postcss-modules-local-by-default@1.1.1 checking installable status
+456 silly cache add args [ 'postcss-modules-local-by-default@^1.0.1', null ]
+457 verbose cache add spec postcss-modules-local-by-default@^1.0.1
+458 silly cache add parsed spec Result {
+458 silly cache add   raw: 'postcss-modules-local-by-default@^1.0.1',
+458 silly cache add   scope: null,
+458 silly cache add   escapedName: 'postcss-modules-local-by-default',
+458 silly cache add   name: 'postcss-modules-local-by-default',
+458 silly cache add   rawSpec: '^1.0.1',
+458 silly cache add   spec: '>=1.0.1 <2.0.0',
+458 silly cache add   type: 'range' }
+459 silly addNamed postcss-modules-local-by-default@>=1.0.1 <2.0.0
+460 verbose addNamed ">=1.0.1 <2.0.0" is a valid semver range for postcss-modules-local-by-default
+461 silly addNameRange { name: 'postcss-modules-local-by-default',
+461 silly addNameRange   range: '>=1.0.1 <2.0.0',
+461 silly addNameRange   hasData: false }
+462 silly mapToRegistry name postcss-modules-local-by-default
+463 silly mapToRegistry using default registry
+464 silly mapToRegistry registry https://registry.npmjs.org/
+465 silly mapToRegistry data Result {
+465 silly mapToRegistry   raw: 'postcss-modules-local-by-default',
+465 silly mapToRegistry   scope: null,
+465 silly mapToRegistry   escapedName: 'postcss-modules-local-by-default',
+465 silly mapToRegistry   name: 'postcss-modules-local-by-default',
+465 silly mapToRegistry   rawSpec: '',
+465 silly mapToRegistry   spec: 'latest',
+465 silly mapToRegistry   type: 'tag' }
+466 silly mapToRegistry uri https://registry.npmjs.org/postcss-modules-local-by-default
+467 verbose addNameRange registry:https://registry.npmjs.org/postcss-modules-local-by-default not in flight; fetching
+468 verbose get https://registry.npmjs.org/postcss-modules-local-by-default not expired, no request
+469 silly addNameRange number 2 { name: 'postcss-modules-local-by-default',
+469 silly addNameRange   range: '>=1.0.1 <2.0.0',
+469 silly addNameRange   hasData: true }
+470 silly addNameRange versions [ 'postcss-modules-local-by-default',
+470 silly addNameRange   [ '0.0.6',
+470 silly addNameRange     '0.0.7',
+470 silly addNameRange     '0.0.8',
+470 silly addNameRange     '0.0.9',
+470 silly addNameRange     '0.0.10',
+470 silly addNameRange     '0.0.11',
+470 silly addNameRange     '0.0.12',
+470 silly addNameRange     '1.0.0-beta1',
+470 silly addNameRange     '1.0.0-beta2',
+470 silly addNameRange     '1.0.0',
+470 silly addNameRange     '1.0.1',
+470 silly addNameRange     '1.0.2',
+470 silly addNameRange     '1.1.0',
+470 silly addNameRange     '1.1.1' ] ]
+471 silly addNamed postcss-modules-local-by-default@1.1.1
+472 verbose addNamed "1.1.1" is a plain semver version for postcss-modules-local-by-default
+473 silly cache afterAdd postcss-modules-local-by-default@1.1.1
+474 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\postcss-modules-local-by-default\1.1.1\package\package.json not in flight; writing
+475 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+476 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\postcss-modules-local-by-default\1.1.1\package\package.json written
+477 silly fetchAndShaCheck shasum a252cd67cd52585035f17e9ad12b35137a7bdd9e
+478 silly rollbackFailedOptional Starting
+479 silly rollbackFailedOptional Finishing
+480 silly runTopLevelLifecycles Starting
+481 silly runTopLevelLifecycles Finishing
+482 silly install printInstalled
+483 verbose stack Error: shasum check failed for C:\Users\ADMINI~1\AppData\Local\Temp\npm-7860-79389f02\registry.npmjs.org\postcss\-\postcss-5.2.6.tgz
+483 verbose stack Expected: a252cd67cd52585035f17e9ad12b35137a7bdd9e
+483 verbose stack Actual:   4403bc6faddd4a4c775c8a50109fd09558f2ddc0
+483 verbose stack From:     https://registry.npmjs.org/postcss/-/postcss-5.2.6.tgz
+483 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\sha\index.js:25:8
+483 verbose stack     at ReadStream.<anonymous> (c:\Program Files\nodejs\node_modules\npm\node_modules\sha\index.js:72:7)
+483 verbose stack     at emitNone (events.js:91:20)
+483 verbose stack     at ReadStream.emit (events.js:185:7)
+483 verbose stack     at endReadableNT (_stream_readable.js:974:12)
+483 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+483 verbose stack     at process._tickCallback (internal/process/next_tick.js:98:9)
+484 verbose cwd d:\xampp\htdocs\output
+485 error Windows_NT 6.1.7601
+486 error argv "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "css-loader" "style-loader" "--save-dev"
+487 error node v6.5.0
+488 error npm  v3.10.3
+489 error shasum check failed for C:\Users\ADMINI~1\AppData\Local\Temp\npm-7860-79389f02\registry.npmjs.org\postcss\-\postcss-5.2.6.tgz
+489 error Expected: a252cd67cd52585035f17e9ad12b35137a7bdd9e
+489 error Actual:   4403bc6faddd4a4c775c8a50109fd09558f2ddc0
+489 error From:     https://registry.npmjs.org/postcss/-/postcss-5.2.6.tgz
+490 error If you need help, you may report this error at:
+490 error     <https://github.com/npm/npm/issues>
+491 verbose exit [ 1, true ]
